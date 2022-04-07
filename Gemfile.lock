@@ -46,6 +46,11 @@ GEM
       erubi (~> 1.4)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.1, >= 1.2.0)
+    active_model_serializers (0.10.13)
+      actionpack (>= 4.1, < 7.1)
+      activemodel (>= 4.1, < 7.1)
+      case_transform (>= 0.2)
+      jsonapi-renderer (>= 0.1.1.beta1, < 0.3)
     activejob (7.0.2.3)
       activesupport (= 7.0.2.3)
       globalid (>= 0.3.6)
@@ -54,6 +59,7 @@ GEM
     activerecord (7.0.2.3)
       activemodel (= 7.0.2.3)
       activesupport (= 7.0.2.3)
+    activerecord-reset-pk-sequence (0.2.1)
     activestorage (7.0.2.3)
       actionpack (= 7.0.2.3)
       activejob (= 7.0.2.3)
@@ -68,6 +74,7 @@ GEM
       tzinfo (~> 2.0)
     addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
+    bcrypt (3.1.17)
     bindex (0.8.1)
     bootsnap (1.11.1)
       msgpack (~> 1.2)
@@ -81,10 +88,12 @@ GEM
       rack-test (>= 0.6.3)
       regexp_parser (>= 1.5, < 3.0)
       xpath (~> 3.2)
+    case_transform (0.2)
+      activesupport
     childprocess (4.1.0)
-    concurrent-ruby (1.1.9)
+    concurrent-ruby (1.1.10)
     crass (1.0.6)
-    debug (1.4.0)
+    debug (1.5.0)
       irb (>= 1.3.6)
       reline (>= 0.2.7)
     digest (3.1.0)
@@ -97,13 +106,13 @@ GEM
       actionpack (>= 6.0.0)
       railties (>= 6.0.0)
     io-console (0.5.11)
-    io-wait (0.2.1)
     irb (1.4.1)
       reline (>= 0.3.0)
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
-    loofah (2.14.0)
+    jsonapi-renderer (0.2.2)
+    loofah (2.16.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.7.1)
@@ -113,7 +122,7 @@ GEM
     method_source (1.0.0)
     mini_mime (1.1.2)
     minitest (5.15.0)
-    msgpack (1.4.5)
+    msgpack (1.5.1)
     net-imap (0.2.3)
       digest
       net-protocol
@@ -122,8 +131,7 @@ GEM
       digest
       net-protocol
       timeout
-    net-protocol (0.1.2)
-      io-wait
+    net-protocol (0.1.3)
       timeout
     net-smtp (0.3.1)
       digest
@@ -132,9 +140,9 @@ GEM
     nio4r (2.5.8)
     nokogiri (1.13.3-x86_64-linux)
       racc (~> 1.4)
-    pg (1.3.4)
+    pg (1.3.5)
     public_suffix (4.0.6)
-    puma (5.6.2)
+    puma (5.6.4)
       nio4r (~> 2.0)
     racc (1.6.0)
     rack (2.2.3)
@@ -213,6 +221,9 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  active_model_serializers
+  activerecord-reset-pk-sequence
+  bcrypt
   bootsnap
   capybara
   debug
