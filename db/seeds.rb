@@ -9,18 +9,36 @@ Image.delete_all
 Image.reset_pk_sequence
 Image.create([
 
-               {name: 'P.-A. Renoir, Бал в Мулен де ла Галетт'},
-               {name: 'P.-A. Renoir, Букет'},
-               {name: 'P. Picasso, Фабрика'},
-               {name: 'H. Matiss, Балерина'},
+               {name: 'Обед', file: 'Obed.jpg', theme_id: 1},
+               {name: 'Дрон', file: 'Drone.jpg', theme_id: 2},
+               {name: 'Число', file: '7.jpg', theme_id: 3},
+               {name: 'Лист', file: 'List.jpg', theme_id: 4},
+               {name: 'Лого', file: 'Logo.jpg', theme_id: 5},
+               {name: 'Ноутбук', file: 'Nout.jpg', theme_id: 6},
+               {name: 'Нефть', file: 'Oil.jpg', theme_id: 7},
+               {name: 'Скидка', file: 'Sales.jpg', theme_id: 8},
+               {name: 'Дым', file: 'Smoke.jpg', theme_id: 9},
+               {name: 'Чай', file: 'Tea.jpg', theme_id: 10},
              ])
 
 Theme.delete_all
 Theme.reset_pk_sequence
 Theme.create([
 
-               {name: "-----"},      # 1 Нет темы
-               {name: "Какое из произведений художника О.Ренуара наилучшим образом характеризует его творчество?"},      # 2
-               {name: "Какое из произведений художника П.Пикассо наилучшим образом характеризует его творчество?"},      # 3
-               {name: "Какое из произведений художника А.Матисса наилучшим образом характеризует его творчество?"},      # 4
+               {name: "Что лучше попить чай или съеть обед?"},      # 1 Нет темы
+               {name: "На какой из картинок изображено число?"},      # 2
+               {name: "Что опаснее дым или нефть?"},      # 3
+               {name: "В какой магазин бы ты пошел со скидкой или с красивым лого?"},      # 4
              ])
+User.delete_all
+User.reset_pk_sequence
+User.create([
+
+              {name: "Gena", email: "gena@gmail.com"},
+              {name: "Dima", email: "dima@gmail.com"},
+              {name: "Olga", email: "olga@gmail.com"},
+              {name: "Alina", email: "alina@gmail.com"},
+              {name: "Sanya", email: "sanya@gmail.com"},
+              {name: "Ivan", email: "ivan@gmail.com"},
+            ])
+
