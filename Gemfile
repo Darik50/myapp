@@ -14,6 +14,9 @@ gem "pg", "~> 1.1"
 gem 'activerecord-reset-pk-sequence'
 gem 'bcrypt'
 gem 'active_model_serializers'
+gem 'haml-rails', '~> 2.0.1'
+gem 'slim'
+gem 'slim-rails', '~> 3.3.0'
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
 
