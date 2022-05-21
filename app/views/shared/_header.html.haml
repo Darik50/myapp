@@ -1,7 +1,21 @@
-%h1 Header
-%ul
-  %li= link_to 'Main', main_index_path
-  %li= link_to 'Contacts', main_contacts_path
-  %li= link_to 'Help', main_help_path
-  %li= link_to 'Ruby on Rails Website', 'http://rubyonrails.org'
+%nav
+  %ul.nav.navbar-nav.pull-left
+  %p.locale
+    = link_to image_tag("Russia.jpg", alt: "",  style: "width: 2%; height: 2%", title: "Русский" ), locale: :ru
+    = link_to image_tag("United_Kingdom.jpg", alt: "",  style: "width: 2%; height: 2%", title: "English"), locale: :en
+    %b
+      = I18n.locale
+    .col-md-3
+  %ul.nav.navbar-nav.pull-right
+    %li= link_to t(".Home"), root_path
+    %li= link_to t(".Help"), main_help_path
+    - if signed_in?
+      %li.logged
+        = gravatar_for current_user
+      %li.navItem1
+        = link_to t('.profile'), current_user
+        = link_to t('.sign_out'), sign_out_path, method: "delete"
+
+    - else
+      %li.navItem= link_to t('.sign_in'), sign_in_path
 

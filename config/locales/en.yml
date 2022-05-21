@@ -31,3 +31,37 @@
 
 en:
   hello: "Hello world"
+
+  shared:
+    header:
+      home: "Home"
+      help: "Help"
+      sign_in: "Sign in"
+      sign_out: "Sign out"
+      person: "Me"
+      profile: "My page"
+      settings: "Settings"
+    footer:
+      About: "About"
+      Contact: "Contact"
+  users:
+    form:
+      name: "Name"
+      email: "E-mail"
+      password: "Password"
+      password_confirmation: "Password confirmation"
+      create_account: "Create my account"
+    new:
+      new_user_sign_up: "New user sign up"
+      back: "Back"
+
+    show:
+      work: "Proceed to work"
+      email: "Email"
+  sessions:
+    new:
+      sign_in: "Sign_in"
+      sign_up: "Sign_up"
+      email: "E-mail"
+      password: "Password"
+      new_user?: "New_user?"

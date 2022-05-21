@@ -17,6 +17,12 @@ gem 'active_model_serializers'
 gem 'haml-rails', '~> 2.0.1'
 gem 'slim'
 gem 'slim-rails', '~> 3.3.0'
+gem 'font-awesome-sass' #, '~> 4.6.2'
+gem 'font-awesome-rails', '~> 4.6', '>= 4.6.3.1'
+gem 'bootstrap-sass', '3.3.7' # Installed 3.3.7 - пример
+gem 'jquery-ui-rails'
+gem 'rails-asset-jqueryui'
+
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
 
@@ -75,3 +81,8 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+group :production do
+  # For Heroku deployment
+  gem 'rails_12factor'
+end
+
