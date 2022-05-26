@@ -1,5 +1,3 @@
-console.log("IN choose_theme.js" );
-
 $('.image .image_display .image_diag').css({"display": "none"});
 $('.img-left-side').css({"display": "none"});
 $('.img-right-side').css({"display": "none"});
@@ -15,5 +13,4 @@ $(document).click(function(e){
         $('.select_theme').empty().html("<%= j render 'work/button_theme_select' -%>");
     }
 });
-
 $('.select_theme').empty().html("<%= j render 'choose_theme_from_arr' -%>");

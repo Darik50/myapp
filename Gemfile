@@ -22,6 +22,7 @@ gem 'font-awesome-rails', '~> 4.6', '>= 4.6.3.1'
 gem 'bootstrap-sass', '3.3.7' # Installed 3.3.7 - пример
 gem 'jquery-ui-rails'
 gem 'rails-asset-jqueryui'
+gem 'kaminari'
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"

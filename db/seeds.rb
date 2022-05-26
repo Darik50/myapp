@@ -11,14 +11,14 @@ Image.create([
 
                {name: 'Обед', file: 'Obed.jpg', theme_id: 1},
                {name: 'Дрон', file: 'Drone.jpg', theme_id: 2},
-               {name: 'Число', file: '7.jpg', theme_id: 3},
+               {name: 'Число', file: '7.jpg', theme_id: 2},
                {name: 'Лист', file: 'List.jpg', theme_id: 4},
-               {name: 'Лого', file: 'Logo.jpg', theme_id: 5},
-               {name: 'Ноутбук', file: 'Nout.jpg', theme_id: 6},
-               {name: 'Нефть', file: 'Oil.jpg', theme_id: 7},
-               {name: 'Скидка', file: 'Sales.jpg', theme_id: 8},
-               {name: 'Дым', file: 'Smoke.jpg', theme_id: 9},
-               {name: 'Чай', file: 'Tea.jpg', theme_id: 10},
+               {name: 'Лого', file: 'Logo.jpg', theme_id: 4},
+               {name: 'Ноутбук', file: 'Nout.jpg', theme_id: 2},
+               {name: 'Нефть', file: 'Oil.jpg', theme_id: 3},
+               {name: 'Скидка', file: 'Sales.jpg', theme_id: 4},
+               {name: 'Дым', file: 'Smoke.jpg', theme_id: 3},
+               {name: 'Чай', file: 'Tea.jpg', theme_id: 1},
              ])
 
 Theme.delete_all
