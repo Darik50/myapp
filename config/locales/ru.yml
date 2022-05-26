@@ -33,3 +33,29 @@ ru:
       email: "E-mail"
       password: "Пароль"
       new_user?: "Новый пользователь?"
+  work:
+    index:
+      def_select_theme: "Выберите тему"
+      common_value: "Средняя оценка"
+      total_values: "Всего оценок"
+      make_decision: "Выберите свою оценку"
+      save_decision: "Сохранить"
+    button_theme_select:
+      select_theme_button: "Выбрать тему"
+    button_list_results:
+      results_list: "Результаты"
+    choose_theme_from_arr:
+      select_theme: "Выберите тему"
+      theme_name: "Тема"
+    display_theme:
+      select_theme: "Выберите тему для оценки"
+
+    results_list:
+      select_theme: "Выберите другую тему"
+      return_to_main: "На главную"
+      page_title: "Перейдите к выбору темы"
+  main:
+    index:
+      contacts: "Контакты"
+      help: "Помощь"
+      about: "О сайте"
